@@ -1,4 +1,8 @@
 /* eslint-disable */
 export default {
-    linklist: []
+    postlist: [ 
+        {
+            title: "테스트 포스트",
+        }
+    ]
 }

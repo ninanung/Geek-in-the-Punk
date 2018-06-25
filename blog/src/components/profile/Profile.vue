@@ -5,11 +5,11 @@
 </template>
 <script>
 /* eslint-disable */
-import Text from './profile-contents/Text'
-import Image from './profile-contents/Image'
+import ProfileText from './profile-contents/ProfileText'
+import ProfileImage from './profile-contents/ProfileImage'
 
 export default {
-    components: { Text, Image }
+    components: { ProfileText, ProfileImage }
 }
 </script>
 <style scoped>

@@ -1,24 +1,22 @@
 <template>
   <div id="app">
-    <div class="link-list">
-      <nav/>
+    <div class="nav">
+      <navigation></navigation>
     </div>
     <div class="body">
       <router-view/>
     </div>
   </div>
 </template>
-
 <script>
 /* eslint-disable */
-import Nav from './components/navigation/Nav'
+import Navigation from './components/navigation/Navigation'
 
 export default {
   name: 'App',
-  components: { Nav }
+  components: { Navigation },
 }
 </script>
-
 <style>
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;

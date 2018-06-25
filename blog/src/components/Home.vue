@@ -1,20 +1,20 @@
 <template>
     <div class='home'>
         <div class='home-header'>
-            <header/>
+            <post-header/>
         </div>
         <div class='home-body'>
-            <body/>
+            <post-body/>
         </div>
     </div>
 </template>
 <script>
 /* eslint-disable */
-import Header from './post/Header'
-import Body from './post/Body'
+import PostHeader from './post/PostHeader'
+import PostBody from './post/PostBody'
 
 export default {
-    components: { Header, Body }
+    components: { PostHeader, PostBody }
 }
 </script>
 <style scoped>
