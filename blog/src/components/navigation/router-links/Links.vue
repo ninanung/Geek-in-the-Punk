@@ -6,6 +6,7 @@
     </div>
 </template>
 <script>
+/* eslint-disable */
 import Link from './Link'
 import {mapState} from 'vuex'
 

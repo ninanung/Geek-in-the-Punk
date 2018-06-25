@@ -1,3 +1,4 @@
+/* eslint-disable */
 import vue from 'vue'
 import vuex from 'vuex'
 import state from './state'

@@ -4,13 +4,14 @@
       <nav/>
     </div>
     <div class="body">
-      <router-view/>   
+      <router-view/>
     </div>
   </div>
 </template>
 
 <script>
-import Nav from './components/Nav'
+/* eslint-disable */
+import Nav from './components/navigation/Nav'
 
 export default {
   name: 'App',

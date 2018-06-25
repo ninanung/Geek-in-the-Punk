@@ -1,18 +1,18 @@
 <template>
+    <div>
 
+    </div>
 </template>
 <script>
+/* eslint-disable */
 import Text from './profile-contents/Text'
 import Image from './profile-contents/Image'
 
 export default {
-    data: {
-        return(
-            
-        )
-    }
+    components: { Text, Image }
 }
 </script>
 <style scoped>
 
 </style>
+/* eslint-disable */

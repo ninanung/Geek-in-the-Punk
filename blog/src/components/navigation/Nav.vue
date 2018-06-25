@@ -9,6 +9,7 @@
     </div>
 </template>
 <script>
+/* eslint-disable */
 import Links from './router-links/Links'
 import Profile from '../profile/Profile'
 
