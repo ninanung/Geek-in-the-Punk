@@ -1,7 +1,7 @@
 <template>
     <div>
-        <h1>{{index + '. ' + title}}</h1>
-        <h1>{{date}}</h1>
+        <h1>{{title}}</h1>
+        <h2>{{date}}</h2>
     </div>
 </template>
 <script>

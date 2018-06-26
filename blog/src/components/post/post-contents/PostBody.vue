@@ -20,6 +20,6 @@ export default {
     #text-body {
         width: 40%;
         text-align: left;
-        margin-left: 30%; margin-right: 30%; margin-top: 100px;
+        margin-left: 30%; margin-right: 30%; margin-top: 100px; margin-bottom: 100px;
     }
 </style>
