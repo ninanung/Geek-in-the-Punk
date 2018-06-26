@@ -1,6 +1,6 @@
 <template>
     <div class="link-body">
-        <router-link class="link" :to="'/post/' + index">{{ toWhere.title }}</router-link>
+        <router-link class="link" :to="'/post/' + index">{{ index + ". " + toWhere.title }}</router-link>
     </div>
 </template>
 <script>
