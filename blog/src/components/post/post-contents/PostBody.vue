@@ -1,18 +1,25 @@
 <template>
-    <div id="text-body">
-
+    <div v-html="replacedText" id="text-body">
     </div>
 </template>
 <script>
 /* eslint-disable */
-import '../../../prism.css'
+import prism from '../../../prism.css'
 
 export default {
     props: [ 'text' ],
+    data: function() {
+        return {
+            replacedText: '',
+            style: null
+        }
+    },
+    beforeMount: function() {
+        this.replacedText = this.text.replace(/--/g, '&nbsp;&nbsp;').replace(/  /g, '<br/>')
+        this.style = prism
+    },
     mounted: function() {
-        let replacedText = this.text.replace(/--/g, '&nbsp;&nbsp;')
-        replacedText = replacedText.replace(/  /g, '<br/>')
-        document.getElementById('text-body').innerHTML = replacedText
+        document.getElementById("text-body").style = this.style
     }
 }
 </script>
