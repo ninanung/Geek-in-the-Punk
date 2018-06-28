@@ -23,4 +23,8 @@ export default {
     ul {
         padding-left: 0;
     }
+    a {
+        text-decoration: none;
+        color: black;
+    }
 </style>
