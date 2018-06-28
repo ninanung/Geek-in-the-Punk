@@ -1,7 +1,7 @@
 <template>
     <div>
         <h1>{{title}}</h1>
-        <h3>{{this.dateString}}</h3>
+        <h3 v-if="date">{{this.dateString}}</h3>
     </div>
 </template>
 <script>

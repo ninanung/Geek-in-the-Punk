@@ -15,4 +15,11 @@ export default {
         text-decoration: none;
         color: black;
     }
+    p {
+        margin: 0;
+        color: #7C8089;
+    }
+    .link-body {
+        margin: 5px 0 5px 0;
+    }
 </style>

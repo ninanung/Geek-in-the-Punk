@@ -1,10 +1,10 @@
 <template>
     <div class='home'>
         <div class='home-header'>
-            <post-header index="Welcome to Blog" title="환영합니다!"/>
+            <post-header index="Welcome to Blog" title="May the code be with you."/>
         </div>
         <div class='home-body'>
-            <post-body text="Home"/>
+            <a href="https://github.com/ninanung"><img src='../assets/jedi.jpg'/></a>
         </div>
     </div>
 </template>
@@ -18,6 +18,8 @@ export default {
 }
 </script>
 <style scoped>
-
+    img {
+        width: 300px; height: auto;
+    }
 </style>
 /* eslint-disable */

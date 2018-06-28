@@ -1,7 +1,7 @@
 <template>
     <div class="link-list-body">
         <ul class="link-list">
-            <li><router-link :to="'/'">Main</router-link></li>
+            <li><router-link :to="'/'"><img src='../../../assets/main.png'/></router-link></li>
             <li v-for="(link, index) in postlist" :key="index"><link-list :toWhere="link" :index="index"/></li>
         </ul>
     </div>
@@ -26,5 +26,8 @@ export default {
     a {
         text-decoration: none;
         color: black;
+    }
+    img {
+        width: 30px; height: auto;
     }
 </style>
