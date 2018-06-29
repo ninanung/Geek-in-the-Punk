@@ -7,7 +7,7 @@
 <script>
 /* eslint-disable */
 export default {
-    props: [ 'index', 'title', 'date' ]
+    props: [ 'title', 'date' ]
 }
 </script>
 <style scoped>

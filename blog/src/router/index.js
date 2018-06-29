@@ -13,7 +13,7 @@ export default new VueRouter({
       component: Home
     },
     {
-      path: '/post/:index',
+      path: '/post/:year/:index',
       name: 'Post',
       component: Post
     }
