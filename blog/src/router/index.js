@@ -1,11 +1,14 @@
+/* eslint-disable */
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/components/Home'
 import Post from '../components/post/Post'
+import NotFound from '../components/NotFound'
 
 Vue.use(VueRouter)
 
-export default new VueRouter({
+const router = new VueRouter({
+  mode: 'history',
   routes: [
     {
       path: '/',
@@ -16,7 +19,13 @@ export default new VueRouter({
       path: '/post/:year/:index',
       name: 'Post',
       component: Post
+    },
+    {
+      path: '/*',
+      name: 'NotFound',
+      component: NotFound
     }
   ]
 })
-/* eslint-disable */
+
+export default router

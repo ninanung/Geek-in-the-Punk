@@ -57,9 +57,32 @@ export default {
             return returnArray
         },
         changeDataValue: function(post) {
+            if(!post) {
+                this.$router.push('/notfound')
+            }
             this.title = post.title
             this.text = post.text.replace(/--/g, '&nbsp;&nbsp;').replace(/  /g, '<br/>')
             this.date = new Date(post.date).toString().split(" ").splice(0, 5).toString().replace(/,/g, " ");
+        },
+        checkIfYearExis: function(year) {
+            let count = 0
+            let yearsArray = []
+            this.sortedPostlist.map(function(post) {
+                const year = new Date(post.date).toString().split(" ").splice(0, 4).splice(3, 1).toString().replace(/,/g, " ")
+                if(yearsArray.length === 0) {
+                    yearsArray.push(year)
+                } else if(yearsArray[count] !== year) {
+                    yearsArray.push(year)
+                    count++
+                }
+            })
+            let isExist = false
+            yearsArray.map(function(listedYear) {
+                if(listedYear === year) {
+                    isExist = true
+                }
+            })
+            return isExist
         }
     }
 }
