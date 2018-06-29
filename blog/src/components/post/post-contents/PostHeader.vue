@@ -1,21 +1,13 @@
 <template>
     <div>
         <h1>{{title}}</h1>
-        <h3 v-if="date">{{this.dateString}}</h3>
+        <h3 v-if="date">{{date}}</h3>
     </div>
 </template>
 <script>
 /* eslint-disable */
 export default {
-    props: [ 'index', 'title', 'date' ],
-    date: function() {
-        return {
-            dateString: ""
-        }
-    },
-    beforeMount: function() {
-        this.dateString = new Date(this.date).toString().split(" ").splice(0, 5).toString().replace(/,/g, " ");
-    }
+    props: [ 'index', 'title', 'date' ]
 }
 </script>
 <style scoped>

@@ -1,5 +1,5 @@
 <template>
-    <div v-html="replacedText" id="text-body">
+    <div v-html="text" id="text-body">
     </div>
 </template>
 <script>
@@ -7,17 +7,7 @@
 import '../../prism/prism.css'
 
 export default {
-    props: [ 'text' ],
-    data: function() {
-        return {
-            replacedText: '',
-            someText: 'text'
-        }
-    },
-    mounted: function() {
-        this.replacedText = this.text.replace(/--/g, '&nbsp;&nbsp;').replace(/  /g, '<br/>')
-
-    }
+    props: [ 'text' ]
 }
 </script>
 <style scoped>
