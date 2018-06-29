@@ -6,7 +6,6 @@ import Post from '../components/post/Post'
 Vue.use(VueRouter)
 
 export default new VueRouter({
-  mode: 'history',
   routes: [
     {
       path: '/',
