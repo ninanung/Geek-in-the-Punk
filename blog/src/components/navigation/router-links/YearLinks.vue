@@ -25,7 +25,18 @@ export default {
 </script>
 <style scoped>
     p {
-        width: 4%; margin: 5px 48% 5px 48%;
-        cursor: pointer;
+        font-size: 22px; font-weight: bold;
+    }
+    @media only screen and (max-width: 850px) {
+        p {
+            width: 16%; margin: 5px 42% 5px 42%;
+            cursor: pointer;
+        }
+    }
+    @media only screen and (min-width: 850px) {
+        p {
+            width: 6%; margin: 5px 47% 5px 47%;
+            cursor: pointer;
+        }
     }
 </style>

@@ -1,7 +1,7 @@
 <template>
     <div class='home'>
         <div class='home-header'>
-            <post-header index="Welcome to Blog" title="May the code be with you."/>
+            <post-header class='home-header' index="Welcome to Blog" title="May the code be with you."/>
         </div>
         <div class='home-body'>
             <a href="https://github.com/ninanung"><img src='../assets/jedi.jpg'/></a>
@@ -20,6 +20,9 @@ export default {
 <style scoped>
     img {
         width: 300px; height: auto;
+    }
+    .home-header {
+        font-size: 14px;
     }
 </style>
 /* eslint-disable */
