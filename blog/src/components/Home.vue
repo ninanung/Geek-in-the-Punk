@@ -25,4 +25,3 @@ export default {
         font-size: 14px;
     }
 </style>
-/* eslint-disable */
