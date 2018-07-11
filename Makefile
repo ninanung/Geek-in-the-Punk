@@ -1,8 +1,9 @@
-BUILD_CD=blog/
+BUILD_CD = blog/
+
 
 build: 
-	$(shell cd $(BUILD_CD); ls)
-	npm run build
+	echo Install npm modules and build
+	cd $(BUILD_CD) && npm install && npm run build 
 
 push:
 	git add * 
