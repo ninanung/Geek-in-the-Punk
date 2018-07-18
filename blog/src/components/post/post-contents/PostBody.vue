@@ -25,4 +25,7 @@ export default {
             margin-left: 30%; margin-right: 30%; margin-top: 100px; margin-bottom: 100px;
         }
     }
+    img {
+        width: 100%; height: auto;
+    }
 </style>
