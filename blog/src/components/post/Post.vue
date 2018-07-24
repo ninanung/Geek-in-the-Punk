@@ -61,7 +61,7 @@ export default {
                 this.$router.push('/notfound')
             }
             this.title = post.title
-            this.text = post.text.replace(/--/g, '&nbsp;&nbsp;').replace(/  /g, '<br/>').replace(/<img>/g, "<img src='./static/photos/").replace(/<\/img>//g, "' style='width: 100%; height: auto;' />");
+            this.text = post.text.replace(/--/g, '&nbsp;&nbsp;').replace(/  /g, '<br/>').replace(/<img>/g, "<img src='./static/photos/").replace(/<\/img>/g, "' style='width: 100%; height: auto;' />");
             this.date = new Date(post.date).toString().split(" ").splice(0, 5).toString().replace(/,/g, " ");
         },
         checkIfYearExis: function(year) {
