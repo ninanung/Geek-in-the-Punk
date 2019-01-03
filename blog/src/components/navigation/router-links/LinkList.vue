@@ -55,12 +55,12 @@ export default {
         background-color: black;
     }
     .tra {
-        background-color: blue;
+        background-color: #37ADDE; border: #37ADDE;
     }
     .chat {
-        background-color: green;
+        background-color: #30CD83; border: #30CD83;
     }
     .test {
-        background-color: orange;
+        background-color: orange; border: orange;
     }
 </style>
