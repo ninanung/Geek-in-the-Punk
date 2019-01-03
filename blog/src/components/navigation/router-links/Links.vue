@@ -2,7 +2,7 @@
     <div class="link-list-body">
         <ul class="link-list">
             <li><router-link :to="'/'"><img src='../../../assets/main.png'/></router-link></li>
-            <li v-for="(yearLink, index) in yearLinks" :key="index"><year-links :yearLink="yearLink" :year="years[index]"/></li>
+            <li v-for="(yearLink, index) in yearLinks" :key="index"><year-links :posts="yearLink" :year="years[index]"/></li>
         </ul>
     </div>
 </template>

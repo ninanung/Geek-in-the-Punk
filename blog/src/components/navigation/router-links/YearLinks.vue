@@ -1,7 +1,7 @@
 <template>
     <div class="year-links">
         <p v-on:click="this.yearListPopUp">{{this.year}}</p>
-        <link-list v-if="isView" v-bind:key="index" v-for="(toWhere, index) in yearLink" :year="year" :toWhere="toWhere" :index="index" />
+        <link-list v-if="isView" v-bind:key="index" v-for="(post, index) in posts" :year="year" :post="post" :index="index" />
     </div>
 </template>
 <script>
@@ -10,7 +10,7 @@ import LinkList from './LinkList.vue'
 
 export default {
     components: { LinkList },
-    props: [ 'year', 'yearLink' ],
+    props: [ 'year', 'posts' ],
     data: function() {
         return {
             isView: false
