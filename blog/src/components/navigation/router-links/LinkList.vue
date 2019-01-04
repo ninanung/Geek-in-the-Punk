@@ -35,20 +35,20 @@ export default {
 <style scoped>
     a {
         text-decoration: none;
-        color: black; 
+        color: black;
     }
     .title {
-        margin: 0; float: left;
+        margin: 0; display: inline;
     }
     .date {
         margin: 0; color: #7C8089;
     }
     .link-body {
-        margin: 5px 0 5px 0;
+        text-align: center; margin-bottom: 7px;
     }
     .label {
-        margin: auto; float: left; border: black solid 1px;
-        border-radius: 4px; font-size: 10px; text-align: center;
+        border: black solid 1px; margin: 0; display: inline;
+        border-radius: 4px; font-size: 10px;
         font-weight: bold; color: white; margin-right: 3px;
     }
     .dev {
