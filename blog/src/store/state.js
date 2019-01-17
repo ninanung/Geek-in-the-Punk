@@ -1,4 +1,6 @@
 /* eslint-disable */
+import state2 from './state2.js';
+
 const topic = {
     test: 'Test',
     chat: 'Chat',
@@ -6,7 +8,7 @@ const topic = {
     tra: 'Travel',
 }
 
-export default {
+let contents = {
     postlist: [ 
         {
             title: "첫글",
@@ -246,3 +248,9 @@ export default {
         }
     ]
 }
+
+for(let post of state2.postList) {
+    contents.postlist.push(post);
+}
+
+export default contents;
