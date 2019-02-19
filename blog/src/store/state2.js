@@ -48,10 +48,10 @@ export default {
             '--이러한 점은 초기의 OpenID와의 차이점 이기도 한데, 초기의 OpenID인증은 사용자가 인증을 완료하면 사용자 정보를 바로 넘겨주었다. 하지만 OAuth2.0 방식은 토큰을 발급하고 발급받은 토큰을 요청의 헤더에 추가하지 않는 이상 사용자 정보를 받아 올 수 업다. 따라서 OAuth2.0은 "인증"이 아닌 "인가"라고 부른다. 허가를 내 준다는 뜻이다. 따라서 이러한 방식은 여러 다른 부분에서 사용될 수 있는데, 특정 서비스에 대한 REST API요청에 대해서 토큰을 발급받은 사람에게만 허용하면서 무분별한 API사용을 막음과 동시에 보안성을 높일 수 있다. 메시징툴인 Mattermost가 같은 방식을 사용한다.  ' +
             '--나는 사실 보안에 크게 관심이 많은 건 아니지만, 이러한 인증방식을 보면 당시 개발자들의 고민이 느껴져서 꽤나 흥미롭다. 관련 공부를 할 때 참고한 링크들을 몇개 공유하면서 글을 끝내고자 한다. 영상도 있고 위키도 있지만, 역시 직접 보고 듣는 영상쪽이 가장 도움이 됐다. 사실 가장 좋은 방법은, 다른 서비스들의 OAuth인증방식을 실제로 사용해 보는 것이다.  ' +
             '  ' +
-            '<a href="https://www.youtube.com/watch?v=BNEoKexlmA4">영어지만 기본적인 인증방식을 대략적으로 설명해준다.</a>  ' +
-            '<a href="https://ko.wikipedia.org/wiki/OAuth">위키는 언제나 읽어서 나쁠 건 없는 지식이다.</a>  ' +
-            '<a href="https://opentutorials.org/course/3405">한글 영상이며, 내가 본 영상들 중 가장 구체적으로 설명되어 있다.</a>  ' +
-            '<a href="https://docs.microsoft.com/ko-kr/azure/active-directory/develop/v1-protocols-oauth-code>MS Azure의 인증에 대한 설명이다. 읽어둬서 나쁠 건 없다.</a>'
+            '- <a href="https://www.youtube.com/watch?v=BNEoKexlmA4">영어지만 기본적인 인증방식을 대략적으로 설명해준다.</a>  ' +
+            '- <a href="https://ko.wikipedia.org/wiki/OAuth">위키는 언제나 읽어서 나쁠 건 없는 지식이다.</a>  ' +
+            '- <a href="https://opentutorials.org/course/3405">한글 영상이며, 내가 본 영상들 중 가장 구체적으로 설명되어 있다.</a>  ' +
+            '- <a href="https://docs.microsoft.com/ko-kr/azure/active-directory/develop/v1-protocols-oauth-code">MS Azure의 인증에 대한 설명이다. 읽어둬서 나쁠 건 없다.</a>'
         }
     ]
 }
