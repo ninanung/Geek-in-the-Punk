@@ -57,7 +57,7 @@ export default {
             title: 'Ansible과 Vagrant',
             date: 1551320535891,
             topic: topic.dev,
-            text: "<img src='./static/photos/ansible-vagrant..jpg' style='width: 100%; height: auto;' />  " +
+            text: "<img src='./static/photos/ansible-vagrant.jpg' style='width: 100%; height: auto;' />  " +
             '  ' +
             '<h3>Ansible과 Vagrant</h3>  ' +
             '--요즘 서버쪽에 관심이 생겨서 인프라나 DevOps관련 공부를 이것저것 하고있는데, 가장 먼저 보였던 것이 Ansible과 Vagrant였다. Ansible은 회사의 서버 관리하는 직원이 언급한적이 있어서 이름은 알고 있었지만 뭐에 쓰는 건지는 몰랐고, Vagrant는 존재 자체를 모르고 있었다. 쉽게 말하자면 Vagrant는 Vagrantfile이라는 파일에 미리 특정 서버를 어떻게 빌드할지를 작성하고 커맨드를 통해 가상환경에서 서버를 올릴 수 있게 해준다. 예컨데 VirtualBox나 VMware와 같은 소프트웨어들 중 무엇을 사용할지, 인터넷 연결은 어떻게 할건지, 가상서버와 서버가 올라간 호스트와의 연결은 어떻게 할건지, 서버 OS는 무엇으로 할건지 등등 여러가지를 설정할 수 있다.  ' +
@@ -66,9 +66,9 @@ export default {
             '--Ansible역시 Vagrant의 방식과 크게 다르지 않은데, YAML파일을 사용하여 하나하나 커맨드를 설정해주면 된다. 서버를 깔고, 필요한 언어가 있으면 설치하고, 필요한 모듈이 있으면 설치한다. 그것 말고도, 필요한 경우 서버를 재실행하도록 명령하거나 모든 작업이 완료되면 특정 작업을 실행하게 하는 등, 꽤나 세세하게 설정을 해놓고 사용할 수 있다. 이 역시 서버 환경의 동일성을 보장하기 위한 것이며, 서버를 설정하는 YAML파일 대로 서버를 설정하면 설정된 서버는 모두 같은 모습을 하게 된다.  ' +
             '--보통 Vagrant와 Ansible을 같이 활용하며, 나는 VirtualBox를 통해 가상서버를 올리도록 했다. 시나리오는 보통 이렇다.  ' +
             '  ' +
-            '<h4>1. Vagrantfile을 작성하고 Vagrant를 통해 VirtualBox에 가상서버를 올린다.</h4>  ' +
-            '<h4>2. SSH접속을 통해 서버가 제대로 동작하는지 확인하고 Ansible을 통해 설정할 YAML파일을 작성한다.</h4>  ' +
-            '<h4>3. 작성된 파일을 토대로 Ansible을 통해 서버를 설정하고 실행한다.</h4>  ' +
+            '<h4>1. Vagrantfile을 작성하고 Vagrant를 통해 VirtualBox에 가상서버를 올린다.</h4>' +
+            '<h4>2. SSH접속을 통해 서버가 제대로 동작하는지 확인하고 Ansible을 통해 설정할 YAML파일을 작성한다.</h4>' +
+            '<h4>3. 작성된 파일을 토대로 Ansible을 통해 서버를 설정하고 실행한다.</h4>' +
             '  ' +
             '--Vagrantfile이나 YAML파일등을 작성하려면 조금 공부를 하고 익숙해지는 시간이 필요하지만 기본적으로는 간단하게 가상서버를 올리고 사용할 수 있다. 테스트 용으로 간단히 사용해도 되고 필요하다면 배포용으로도 얼마든지 동작할 수 있다고 본다.  ' +
             '--그런데 Ansible과 Vagrnat를 사용하다 보면 한가지 기시감을 계속 느낀다. "앵? 이거 완전히 Docker image로 서버 설정하고 Dockerfile로 세팅하는 시나리오 아님?" 이라는 생각이 계속 든다. 이건 내 짐작이지만, 아마 Docker가 영향을 받지 않았다고는 말 못할 것 같다. 애초에 Docker가 더 늦게 나오기도 했고 방식이 너무나도 비슷하다. 다만 표절이라기 보다는 Docker가 기존에 있던 것들을 잘 통합해서 내놓았다는 느낌.  ' +
