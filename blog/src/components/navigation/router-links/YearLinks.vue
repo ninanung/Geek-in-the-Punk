@@ -1,7 +1,9 @@
 <template>
     <div class="year-links">
         <p v-on:click="this.yearListPopUp">{{this.year}}</p>
-        <link-list v-if="isView" v-bind:key="index" v-for="(post, index) in posts" :year="year" :post="post" :index="index" />
+        <div v-if="isView">
+            <link-list v-bind:key="index" v-for="(post, index) in posts" :year="year" :post="post" :index="index" />
+        </div>
     </div>
 </template>
 <script>
