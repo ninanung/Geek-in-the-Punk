@@ -1,10 +1,10 @@
 <template>
     <div class='home'>
         <div class='home-header'>
-            <post-header class='home-header' index="Welcome to Blog" title="May the code be with you."/>
+            <post-header class='home-header' index="Welcome to Blog" title="Swing your Code!"/>
         </div>
         <div class='home-body'>
-            <a href="https://github.com/ninanung"><img src='../assets/jedi.jpg'/></a>
+            <a href="https://github.com/ninanung"><img src='../assets/kanji.jpeg'/></a>
         </div>
     </div>
 </template>
