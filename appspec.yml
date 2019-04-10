@@ -5,20 +5,20 @@ files:
     destination: /var/www/Geek-in-the-Punk
 hooks:
   AfterInstall:
-    - location: /var/www/Geek-in-the-Punk/scripts/set_owner
+    - location: scripts/set_owner.sh
       timeout: 5
       runas: root
-    - location: /var/www/Geek-in-the-Punk/scripts/install_dependencies
+    - location: scripts/install_dependencies.sh
       timeout: 120
       runas: ec2-user
-    - location: /var/www/Geek-in-the-Punk/scripts/build
+    - location: scripts/build.sh
       timeout: 120
       runas: ec2-user
   ApplicationStart:
-    - location: /var/www/Geek-in-the-Punk/scripts/restart_server
+    - location: scripts/restart_server.sh
       timeout: 10
       runas: root
   ValidateService: 
-    - location: /var/www/Geek-in-the-Punk/scripts/validate_nginx
+    - location: scripts/validate_nginx.sh
       timeout: 10
       runas: root
