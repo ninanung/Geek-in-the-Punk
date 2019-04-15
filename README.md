@@ -1,6 +1,6 @@
 # Blog!
 
-Using Vue!
+Using Vue!  
 Deployed by AWS!
 
-[Geek in the Punk!](https://geekinthepunk.net)
+[To the Blog!](https://geekinthepunk.net)
