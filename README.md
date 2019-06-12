@@ -3,4 +3,8 @@
 Using Vue!  
 Deployed by AWS!
 
-[To the Blog!](https://geekinthepunk.net)
+# !!! This Blog is no more exist !!!
+
+I made new one. This code no more used. But the URL is same.
+
+[To the NEW Blog!](https://geekinthepunk.net)
